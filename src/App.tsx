@@ -254,7 +254,7 @@ function App() {
 
       <footer className="footer">
         <span>GuardianClaw — Built for the <a href="https://dev.to/devteam/join-the-openclaw-challenge-1200-prize-pool-5682" target="_blank" rel="noreferrer">OpenClaw Challenge 2026</a></span>
-        <span>Dual-layer security: Rule Engine + Claude AI</span>
+        <span>Dual-layer security: Rule Engine + NVIDIA NIM AI</span>
       </footer>
     </div>
   );
