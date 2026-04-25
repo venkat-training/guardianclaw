@@ -1,0 +1,11 @@
+name = "guardianclaw-api"
+main = "worker/index.ts"
+compatibility_date = "2026-04-01"
+compatibility_flags = ["nodejs_compat"]
+
+# ANTHROPIC_API_KEY must be set as a secret:
+# npx wrangler secret put ANTHROPIC_API_KEY
+# Never put secrets in this file.
+
+[dev]
+port = 8787
