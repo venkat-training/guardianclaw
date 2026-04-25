@@ -23,6 +23,9 @@ export async function evaluateCommand(command: string): Promise<EvaluationResult
     body: JSON.stringify({ command }),
   });
 
-  const data = await response.json();
+  // Parse regardless of status — 403=BLOCK, 202=REVIEW, 200=ALLOW
+  const data = await response.json().catch(() => ({
+    error: "Failed to parse response"
+  }));
   return data as EvaluationResult;
 }
